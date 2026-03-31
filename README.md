@@ -15,20 +15,23 @@ A hands-on tutorial project exploring the core features of [Crawl4AI](https://gi
 ## Setup
 
 ```bash
-python -m venv venv
-source venv/bin/activate
-pip install crawl4ai python-dotenv pydantic
+pip install crawl4ai python-dotenv
+crawl4ai-setup
 ```
 
-Create a `.env` file:
+## API Key
+
+LLM extraction (step 5) requires an API key from your LLM provider of choice. This project is LLM provider-agnostic — swap in any LLM provider supported by Crawl4AI (OpenAI, Gemini, DeepSeek, etc.).
+
+Create a `.env` file and add your LLM provider API key. 
 
 ```
-DEEPSEEK_API_KEY=your_key_here
+YOUR_LLM_PROVIDER_API_KEY=your_key_here
 ```
 
 ## Usage
 
-Uncomment the function you want to run in `main()` inside `crawler.py`, then:
+Uncomment the function you want to run in `main()` inside `crawler.py` and run:
 
 ```bash
 python crawler.py
