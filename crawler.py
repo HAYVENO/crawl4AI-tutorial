@@ -1,4 +1,3 @@
-import utils
 import asyncio
 import json
 import os
@@ -154,8 +153,8 @@ async def main():
         # await run_raw_markdown_crawl(crawler)
         # await run_fit_markdown_crawl(crawler)
         # await run_css_extraction(crawler)
-        await run_llm_extraction(crawler)
-        # await run_deep_crawl(crawler)
+        # await run_llm_extraction(crawler)
+        await run_deep_crawl(crawler)
 
 if __name__ == "__main__":
     asyncio.run(main())
